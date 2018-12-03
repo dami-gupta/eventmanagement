@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+    background-color:black;
+}
+
+li {
+    float:right;
+}
+
+li a { 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #CCAA00;
+}
+#Tesla
+{
+     width: 130;
+    margin: auto;
+    background-color:black;
+    
+    border: 2px grey;
+    padding: 25px;
+    margin: 25px;
+	height:250px;height:250px;
+	
+}
+
+</style>
+</head>
+<body bgcolor="black">
+    
+<ul>
+    <li><a href="index.html">Sign In</a></li>
+    <li><a href="About.html">About Us</a></li>
+     <li><a href="gallery.html">Gallery</a></li>
+  <li><a class="active" href="home.html">Home</a></li>
+
+</ul>
+    <p><center><h1><font color="white">EVENT MANAGEMENT</font></h1></center></p>
+    <div class="w3-content w3-section" style="max-width:1350px">
+
+  <img class="mySlides w3-animate-fading" src="3.jpg" style="width:124%" height="950">
+<img class="mySlides w3-animate-fading" src="d.jpg" style="width:124%" height="950">
+<img class="mySlides w3-animate-fading" src="2.jpg" style="width:124%" height="950">
+<img class="mySlides w3-animate-fading" src="wedding.jpg" style="width:124%" height="950">
+</div>
+    
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000);    
+}
+</script>
+
+<div id="Tesla">
+    <p><font color="red" size="5"></font></p><center><font color="white" size="9">EVENTS</font></center><p><center><font color="white" size="5">We Create Fun Lasting Memories.<br>We offers a range of party services.</font></center></p>
+<center><button type="button"><a href="event.html">EVENTS</a></button></center>
+</div>
+
+
+
+
+</body>
+</html>

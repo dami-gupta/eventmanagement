@@ -1,0 +1,166 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+    background-color:black;
+}
+
+li {
+    float:right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #CCAA00;
+}
+</style>
+
+<title> Booking Form</title>
+<!-- Meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resort Booking Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Meta tags -->
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<!-- Stylesheet -->
+<link href="css/style1.css" rel='stylesheet' type='text/css' />
+<!-- //Stylesheet -->
+<!--fonts--> 
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+<!--//fonts--> 
+</head>
+<body>
+    <ul>
+    <li><a href="home1.html">Logout</a></li>
+    <li><a href="About.html">About Us</a></li>
+     <li><a href="gallery.html">Gallery</a></li>
+  <li><a class="active" href="home.html">Home</a></li>
+
+</ul>
+<!--background-->
+<h1></h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<h2>Book Now</h2>
+						<div class="book-form agileits-login">
+							<form action="Booking" method="post">
+								<div class="agileits_reservation_grid">
+								<div class="phone_email">
+									<div class="form-text">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										<input type="text" name="fname" placeholder="First name" required="">
+									</div> 
+								</div>
+								<div class="phone_email phone_email1">
+									<div class="form-text">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										<input type="text" name="lname" placeholder="Last name" required="">
+									</div>
+								</div>
+								
+								<div class="phone_email">
+									<div class="form-text">
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<input type="text" name="Phone_no" placeholder="Phone number" required="">
+									</div> 
+								</div> 
+								<div class="phone_email phone_email1">
+									<div class="form-text">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<input type="email" name="email" placeholder="Email" required="">
+									</div>
+								</div>
+									
+								
+									<div class="span1_of_1 phone_email1">
+										<div class="book_date"> 
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+												<input  type="text" name="Time" value="" placeholder="Time"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'hh:mm:AM/PM';}" required="">
+
+										</div>					
+									</div>
+									<div class="span1_of_1 phone_email">
+										<div class="book_date"> 
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+												<input  id="datepicker1" name="Date" type="text" value="" placeholder="Event Date"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+
+										</div>					
+									</div>
+									<div class="span1_of_1">
+										<!-- start_section_room -->
+										<div class="section_room">
+											<i class="fa fa-users" aria-hidden="true"></i>
+											<select name="Guests" id="country" onchange="change_country(this.value)" class="frm-field required">
+												<option value="">No.of guests</option>
+												<option value="100">100</option>
+												<option value="200">200 </option>         
+												<option value="300">300</option>
+												<option value="400">400 </option>
+												<option value="500">500</option>
+												<option value="600">600 </option>
+											</select>
+										</div>	
+									</div>
+									<div class="span1_of_1 phone_email1">
+										<!-- start_section_room -->
+										<div class="section_room">
+											<i class="fa fa-h-square" aria-hidden="true"></i>
+											<select name="Type" id="country1" onchange="change_country(this.value)" class="frm-field required">
+												<option value="">Event Type</option>
+                                                                                                  <option value="Wedding">Wedding</option>
+												<option value="Birthday">Birthday</option>
+												<option value="Personal Event">Personal Event </option>         
+												<option value="Business">Business</option>
+                                                                                                 <option value="College Event">College Events</option>
+							
+											</select>
+										</div>	
+									</div>
+									<div class="clear"></div>
+								</div> 
+								<input type="submit" value="Book Now">
+								<div class="clear"></div>
+							</form>
+						</div>
+
+		</div>
+   </div>
+ 
+	</div>
+<!--//copyright-->
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<!-- Calendar -->
+				<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+				  <script>
+						  $(function() {
+							$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+						  });
+				  </script>
+			<!-- //Calendar -->
+
+</body>
+</html>
